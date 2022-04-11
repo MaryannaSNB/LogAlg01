@@ -1,69 +1,48 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
+
 <head>
-   
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Login</title>
+    <title>Document</title>
 </head>
 
 <body>
 
-    <div id="mensagem">Boa noite!</div>
+    <h1>Minha Segunda Página</h1>
 
-    <form> <actio>"https://google.com/"</actio>
-        <div>Digite suas credenciais:</div>
-        <label>Login: <input type="text" id="login" autocomplete="off" autofocus></label><br>
-        <label>Senha: <input type="password" id="senha" autocomplete="off"></label><br>
-        <label><input type="checkbox" id="logado" value="sim"> Mantenha-me logado.</label><br>
-        <button type="submit" id="enviar">Entrar</button>
-    </form>
+    <p>Essa é minha segunda página em HTML na vida. Não estou entendendo nada, mas tá tudo certo!</p>
+
+    <h2>Meu bloco de HTML</h2>
+
+    <div id="minhaDiv" style="border: 3px solid black"></div>
 
     <script>
-     
-      // Login e senha do usuário
-      const loginUsuario = 'Joca';
-      const loginSenha = '1234';
-     
-        //Quando clicar em 'id="enviar"'
-        enviar.onclick = () => {
+        // Código JavaScript
 
-          //Ler o valor do 'Login' digitado
-          var formUsuario = login.value;
-          
-          //Ler o valor da 'Senha digitada'
-          var formSenha = senha.value;
+        // Cria uma variável
+        var teste01 = "Texto de teste";
 
-          //Testa se usuário e senha estão corretos
-          if(
-         //Primeira expressão
-          formUsuario == loginUsuario
+        // Escreve o valor da variável na 'div'
+        minhaDiv.innerHTML = teste01;
 
-          //AND
+        // Variável
+        var numero1 = 510;
+        var numero2 = 123;
 
-          &&
-           
-          // Segunda expressão
-           formSenha == loginSenha
-           ) {
-                console.log('usuario ok.')
-          } else {
-                console.error('oooops!');
-            }
+        // Exibe a soma na div
+        minhaDiv.innerHTML = numero1 + numero2;
 
-         
-          
+        // Obtém o valor da variável do prompt
+        var nome = prompt('Digite seu nome');
+        var sobrenome = prompt('digite seu sobrenome');
 
+        // Mostra nome na div
+        minhaDiv.innerHTML = `Olá ${nome} ${sobrenome}!!`;
 
-
-         // Não faça mais nada.
-            return false;
-        }
-
-       
     </script>
 
 </body>
+
 </html>

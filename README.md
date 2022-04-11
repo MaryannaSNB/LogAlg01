@@ -1,2 +1,2 @@
 # LogAlg01
- Primeiro projeto de lógica e algoritmo.
+ Primeiro projeto de lógica e algoritimo.
